@@ -1,0 +1,268 @@
+
+.resume-page {
+  min-height: 100vh;
+  background: #f5f7fc;
+  color: #19233d;
+  font-family: Arial, sans-serif;
+}
+
+.resume-page * {
+  box-sizing: border-box;
+}
+
+.resume-header {
+  height: 75px;
+  padding: 0 7%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e8ebf2;
+}
+
+.resume-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #172554;
+}
+
+.resume-brand span {
+  background: #5046e5;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 9px;
+}
+
+.resume-back {
+  padding: 10px 16px;
+  background: white;
+  border: 1px solid #dfe4ed;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #34415c;
+}
+
+.resume-container {
+  max-width: 850px;
+  margin: auto;
+  padding: 45px 22px;
+}
+
+.resume-heading {
+  margin-bottom: 28px;
+}
+
+.resume-heading > span {
+  color: #5046e5;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.resume-heading h1 {
+  font-size: 30px;
+  margin: 11px 0;
+  color: #172554;
+}
+
+.resume-heading p {
+  color: #8490a5;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.resume-card {
+  padding: 38px;
+  background: white;
+  border: 1px solid #e8ebf2;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 5px 20px #17255408;
+}
+
+.resume-icon {
+  font-size: 43px;
+  margin-bottom: 14px;
+}
+
+.resume-card h2 {
+  font-size: 21px;
+  color: #172554;
+}
+
+.resume-description {
+  max-width: 450px;
+  margin: 10px auto 20px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #8490a5;
+}
+
+.resume-status {
+  display: inline-block;
+  padding: 10px 17px;
+  border-radius: 30px;
+  background: #fff5e8;
+  color: #a66316;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+.resume-status.uploaded {
+  background: #e7f8ef;
+  color: #16804c;
+}
+
+.resume-file-label {
+  display: block;
+  max-width: 410px;
+  margin: auto;
+  padding: 20px;
+  border: 2px dashed #c9c9ed;
+  border-radius: 11px;
+  background: #f9f9ff;
+  color: #5046e5;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.resume-file-label input {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  color: #56617a;
+  font-size: 12px;
+}
+
+.resume-file-name {
+  color: #34415c;
+  font-size: 12px;
+  margin-top: 13px;
+  overflow-wrap: anywhere;
+}
+
+.resume-hint {
+  font-size: 11px;
+  color: #929bad;
+  margin: 16px 0;
+}
+
+.resume-upload-button {
+  padding: 13px 25px;
+  background: #5046e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.resume-upload-button:hover {
+  background: #3930c3;
+}
+
+.resume-upload-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+.resume-download,
+.resume-delete {
+  padding: 11px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.resume-download {
+  border: 1px solid #5046e5;
+  color: #5046e5;
+  background: white;
+}
+
+.resume-delete {
+  border: 1px solid #f0cccc;
+  background: #fff6f6;
+  color: #c43b3b;
+}
+
+.resume-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.resume-error {
+  margin-top: 18px;
+  color: #dc2626;
+  font-size: 13px;
+}
+
+.resume-success {
+  margin-top: 18px;
+  color: #15803d;
+  font-size: 13px;
+}
+
+.resume-tip {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  padding: 19px 22px;
+  background: white;
+  border: 1px solid #e8ebf2;
+  border-radius: 12px;
+}
+
+.resume-tip > span {
+  font-size: 23px;
+}
+
+.resume-tip strong {
+  font-size: 13px;
+}
+
+.resume-tip p {
+  font-size: 12px;
+  color: #8490a5;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.resume-loading {
+  padding: 100px 20px;
+  text-align: center;
+  color: #5046e5;
+}
+
+@media (max-width: 550px) {
+  .resume-header {
+    padding: 0 16px;
+  }
+
+  .resume-container {
+    padding: 28px 15px;
+  }
+
+  .resume-card {
+    padding: 25px 17px;
+  }
+
+  .resume-heading h1 {
+    font-size: 25px;
+  }
+}

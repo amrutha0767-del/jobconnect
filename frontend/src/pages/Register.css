@@ -1,0 +1,134 @@
+
+.register-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  padding: 30px 8%;
+  font-family: Arial, sans-serif;
+}
+
+.register-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #172554;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.register-logo span {
+  background: #4f46e5;
+  color: white;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.register-container {
+  max-width: 850px;
+  margin: 75px auto;
+  text-align: center;
+}
+
+.register-label {
+  color: #4f46e5;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.register-heading h1 {
+  color: #172554;
+  font-size: 38px;
+  margin: 15px 0;
+}
+
+.register-heading p {
+  color: #64748b;
+}
+
+.role-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 45px;
+}
+
+.role-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 25px #1e293b0c;
+  transition: 0.3s;
+}
+
+.role-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px #1e293b15;
+}
+
+.role-icon {
+  font-size: 50px;
+  margin-bottom: 18px;
+}
+
+.role-card h2 {
+  color: #172554;
+  margin-bottom: 15px;
+}
+
+.role-card p {
+  color: #64748b;
+  line-height: 1.7;
+  min-height: 75px;
+  font-size: 14px;
+}
+
+.role-button {
+  display: block;
+  background: #4f46e5;
+  color: white;
+  padding: 14px 10px;
+  border-radius: 9px;
+  font-weight: 700;
+  margin-top: 25px;
+  transition: 0.2s;
+}
+
+.role-button:hover {
+  background: #3730a3;
+}
+
+.employer-button {
+  background: #172554;
+}
+
+.employer-button:hover {
+  background: #312e81;
+}
+
+.register-login {
+  color: #64748b;
+  margin-top: 35px;
+}
+
+.register-login a {
+  color: #4f46e5;
+  font-weight: 700;
+}
+
+@media (max-width: 650px) {
+  .role-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .register-container {
+    margin: 45px auto;
+  }
+
+  .register-heading h1 {
+    font-size: 30px;
+  }
+}

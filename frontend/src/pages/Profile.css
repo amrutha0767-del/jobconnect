@@ -1,0 +1,262 @@
+
+.profile-page {
+  min-height: 100vh;
+  background: #f5f7fc;
+  font-family: Inter, Arial, sans-serif;
+  color: #19233d;
+}
+
+.profile-page * {
+  box-sizing: border-box;
+}
+
+.profile-header {
+  height: 75px;
+  background: white;
+  border-bottom: 1px solid #e8ebf2;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #172554;
+}
+
+.profile-brand span {
+  background: #5046e5;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 9px;
+}
+
+.profile-back {
+  padding: 10px 16px;
+  border: 1px solid #e1e5ed;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #34415c;
+}
+
+.profile-back:hover {
+  background: #f1f0ff;
+}
+
+.profile-container {
+  max-width: 1050px;
+  margin: auto;
+  padding: 42px 25px;
+}
+
+.profile-heading {
+  margin-bottom: 25px;
+}
+
+.profile-heading > span {
+  color: #5046e5;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.profile-heading h1 {
+  color: #172554;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.profile-heading p {
+  color: #808aa0;
+  font-size: 14px;
+}
+
+.profile-card {
+  background: white;
+  border: 1px solid #e8ebf2;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 20px #17255408;
+}
+
+.profile-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-avatar {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #ecebff;
+  color: #5046e5;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.profile-card-heading h2 {
+  font-size: 19px;
+  margin: 0 0 6px;
+}
+
+.profile-card-heading p {
+  font-size: 12px;
+  color: #8991a4;
+  margin: 0;
+}
+
+.profile-divider {
+  height: 1px;
+  background: #edf0f5;
+  margin: 25px 0;
+}
+
+.profile-card form h3 {
+  font-size: 16px;
+  color: #26344e;
+  margin-bottom: 20px;
+}
+
+.profile-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.profile-field label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #45516a;
+}
+
+.profile-field input,
+.profile-field textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #dfe4ed;
+  border-radius: 8px;
+  background: white;
+  font-family: inherit;
+  font-size: 13px;
+  color: #26344e;
+  outline: none;
+}
+
+.profile-field input:focus,
+.profile-field textarea:focus {
+  border-color: #5046e5;
+  box-shadow: 0 0 0 3px #5046e515;
+}
+
+.profile-field textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.profile-field .profile-readonly {
+  background: #f5f6fa;
+  color: #7e879a;
+  cursor: not-allowed;
+}
+
+.profile-field small {
+  color: #969eb0;
+  font-size: 10px;
+}
+
+.profile-full-field {
+  width: 100%;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.profile-cancel,
+.profile-save {
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.profile-cancel {
+  background: white;
+  border: 1px solid #dfe4ed;
+  color: #45516a;
+}
+
+.profile-save {
+  background: #5046e5;
+  border: 1px solid #5046e5;
+  color: white;
+}
+
+.profile-save:hover {
+  background: #3930c3;
+}
+
+.profile-save:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.profile-error {
+  color: #dc2626;
+  font-size: 13px;
+}
+
+.profile-success {
+  color: #15803d;
+  font-size: 13px;
+}
+
+.profile-loading {
+  padding: 100px 20px;
+  text-align: center;
+  color: #5046e5;
+  font-size: 15px;
+}
+
+@media (max-width: 650px) {
+  .profile-header {
+    padding: 0 18px;
+  }
+
+  .profile-container {
+    padding: 28px 15px;
+  }
+
+  .profile-card {
+    padding: 20px;
+  }
+
+  .profile-form-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .profile-heading h1 {
+    font-size: 25px;
+  }
+}
